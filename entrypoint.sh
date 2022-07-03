@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "$GITHUB_EVENT_NAME" != "pull_request"]]; then
+if [[ "$GITHUB_EVENT_NAME" != "pull_request" ]]; then
   echo "This action on runs on pull_request.closed"
   echo "Found: $GITHUB_EVENT_NAME"
   exit 1
